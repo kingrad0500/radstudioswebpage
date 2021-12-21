@@ -1,0 +1,112 @@
+/*
+
+    COLOR: #FFBD35 ; #3FA796 ; #8267BE ; #502064 ; #FF5677 ; #FFFCDC ; #160040
+
+    FONTS: 
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Oooh Baby', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+*/
+
+/*GENERAL SETTINGS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #160040;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    color: #160040;
+}
+
+/*Tablet Size Screen between 800px and 1012px*/
+@media only screen and (min-width: 800px) and (max-width: 1012px){
+
+    /*NavBar*/
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        width: 100%;
+        font-weight: 700;
+        
+    }
+
+    .logo-image-navbar{
+        height: 80px;
+    }
+
+    .logo-image-navbar img {
+        width: 7rem;
+        height: 80px;
+        margin-left: 30px;
+    }
+
+    .options ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    .options ul li {
+        padding: 30px;
+        transition: .3s;
+    }
+
+    .options ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .options ul li:hover {
+        background-color: #8267BE;
+        color: white;
+    }
+
+    /*Title Section*/
+    header{
+        background-image: url("/assets/images/code-g173400efe_1920.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    #title h1, #title h4{
+        font-family: 'Oooh Baby', cursive;
+        font-size: 4rem;
+        color: white;
+    }
+
+    /*Section Highlights*/
+    #highlights{
+        color: #FFBD35;
+        margin: 2rem auto;
+        display: flex;
+        
+    }
+    #highlights div {
+        border: 1px solid #FFBD35;
+        border-radius: 15px;
+    }
+}
